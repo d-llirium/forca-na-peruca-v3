@@ -1,0 +1,7 @@
+{
+  "name": "forca_na_peruca-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
