@@ -25,3 +25,32 @@
 #container a {
   text-decoration: none;
 }
+
+ion-header
+{
+    ion-buttons
+    {
+        ion-button
+        {
+            color: clear;
+            
+            ion-label
+            {
+                color: var(--ion-label-color);
+            }
+            ion-icon
+            {
+                color: var(--ion-color-favorite);
+            }
+        }
+    }
+
+}
+ion-card-title
+{
+    color: var(--ion-color-favorite);
+    
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
