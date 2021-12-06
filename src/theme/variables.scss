@@ -2,7 +2,7 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
-:root {
+:root { // para todo o app
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,6 +74,45 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  // -- src/theme/variables.scss
+  // -- ADICIONADOS POR MIM na :root-- 
+  // -- toolbar
+  --ion-toolbar-background: #ffecf1;
+  --ion-toolbar-background-rgb: 255, 236, 241;
+
+  // -- content
+  --ion-background-color: #d5e9e9;
+  --ion-background-color-rgb: 213, 233, 233;
+
+  --ion-text-color:  #988dae;
+  --ion-text-color-rgb: 260, 17, 62;
+
+  // -- item
+  --ion-item-background: #d5ddf8;
+  --ion-item-background: 213, 221, 248;
+
+  // -- cards
+  --ion-card-background: #e9e3ed;
+  --ion-card-background-rgb: 233, 227, 237;
+
+  --ion-card-subtitle-text-align: center;
+  --ion-card-subtitle-color: #92949c;
+  --ion-card-subtitle-color-rgb: 146, 148, 156;
+
+  // -- labels
+  --ion-label-color: #3880ff;
+  --ion-label-color-rgb: 56, 128, 255;
+
+  // -- tab
+  --ion-tab-bar-background: #a6b8f3;
+  --ion-tab-bar-background-rgb: 166, 184, 243;
+
+  /** favorite **/
+  --ion-color-favorite: #ff00ff;
+  --ion-color-favorite-rgb: 255,0,255;
+  --ion-color-favorite-contrast: #e0ac08;
+  --ion-color-favorite-contrast-rgb: 224,172,8;
 }
 
 @media (prefers-color-scheme: dark) {
