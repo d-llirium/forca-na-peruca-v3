@@ -19,7 +19,7 @@ interface IReferencia
 export class SobrePage implements OnInit 
 {
   // ATRIBUTOS
-  recursos: IRecurso[] = 
+  private recursos: IRecurso[] = 
   [
     {
       nome: "macbook", 
@@ -35,7 +35,7 @@ export class SobrePage implements OnInit
     }
       
   ];
-  referencias: IReferencia[] =
+  private referencias: IReferencia[] =
   [
     {
       icone: "./assets/icon/apple-icon.png",
