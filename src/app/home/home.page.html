@@ -8,18 +8,10 @@
           slot="start"
           target="_blank" 
           href="https://github.com/d-llirium/forca-na-peruca-v3">
-          <ion-label
-          color="favorite">
+          <ion-label>
             ://força na peruca
           </ion-label>
         </ion-button>  
-        <ion-button 
-        slot="end" 
-        routerLink="/cadastrar">
-          <ion-icon 
-            name="add-circle-outline">
-          </ion-icon>
-        </ion-button>
         <!-- fab button -->
         <ion-fab 
           horizontal="end" 
@@ -42,8 +34,13 @@
             <ion-fab-button 
               href="/map">
               <ion-icon 
-                color="secondary" 
                 name="map-outline">
+              </ion-icon>
+            </ion-fab-button>
+            <ion-fab-button 
+              routerLink="/cadastrar">
+              <ion-icon 
+                name="add-circle-outline">
               </ion-icon>
             </ion-fab-button>
           </ion-fab-list>
@@ -88,11 +85,11 @@
           </ion-icon>
         </ion-tab-button>
         <ion-tab-button 
+          class="sparkle"
           tab="como-tab"
           layout="icon-start">
           <ion-icon 
-            name="sparkles-outline"
-            color="favorite">
+            name="sparkles-outline">
           </ion-icon>
         </ion-tab-button>
       </ion-tab-bar>
