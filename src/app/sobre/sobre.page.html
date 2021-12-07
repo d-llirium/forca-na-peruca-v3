@@ -6,4 +6,17 @@
 
 <ion-content>
   <h1>sobre</h1>
+  <ion-card>
+    <ion-card-content>
+      <ion-item-group>
+        <ion-item-divider *ngFor="let r of recursos">
+          <img 
+            src="{{r.icone}}"
+            width="15">
+              {{r.nome}}
+          <br>
+        </ion-item-divider>
+      </ion-item-group>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
