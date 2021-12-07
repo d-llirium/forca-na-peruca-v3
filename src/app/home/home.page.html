@@ -1,20 +1,101 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app>
+  <!-- header -->
+  <ion-header 
+  [translucent]="true">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-buttons>
+        <ion-button 
+          slot="start"
+          target="_blank" 
+          href="https://github.com/d-llirium/forca-na-peruca-v3">
+          <ion-label
+          color="favorite">
+            ://força na peruca
+          </ion-label>
+        </ion-button>  
+        <ion-button 
+        slot="end" 
+        routerLink="/cadastrar">
+          <ion-icon 
+            name="add-circle-outline">
+          </ion-icon>
+        </ion-button>
+        <!-- fab button -->
+        <ion-fab 
+          horizontal="end" 
+          vertical="center" 
+          slot="fixed">
+          <ion-fab-button 
+            size="small" 
+            color="clear">
+            <ion-icon 
+              name="caret-back-outline" 
+              size="small" 
+              color="favorite" 
+              edge="true">
+            </ion-icon>
+          </ion-fab-button>
+          <!-- fab list -->
+          <ion-fab-list 
+            side="start" 
+            activated="true">
+            <ion-fab-button 
+              href="/map">
+              <ion-icon 
+                color="secondary" 
+                name="map-outline">
+              </ion-icon>
+            </ion-fab-button>
+          </ion-fab-list>
+        </ion-fab>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <!-- content: é parte "rolável" do app-->  
+  <ion-content 
+    [fullscreen]="true"> 
+    <!-- card -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          Pronto para criar um aplicativo?
+        </ion-card-title>
+        <ion-card-subtitle>
+          . Comece com Ionic UI Components
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img 
+          src="https://c.tenor.com/dGKAO486sB8AAAAd/ugh-mr-dinkles.gif">
+        </ion-img>
+      </ion-card-content>
+    </ion-card>
+    <!-- no html da página mãe = que no caso é a home -->
+    <!-- src/app/home/home.page.html -->
+    <!-- tabs: adiciona os filhos da pag no final do content --> 
+    <ion-tabs> 
+      <ion-tab-bar>
+        <ion-tab-button 
+          tab="sobre">
+          <ion-icon 
+            name="information-circle-outline">
+          </ion-icon>
+        </ion-tab-button>
+        <ion-tab-button 
+          tab="como-projeto">
+          <ion-icon 
+            name="folder-outline">
+          </ion-icon>
+        </ion-tab-button>
+        <ion-tab-button 
+          tab="como-tab"
+          layout="icon-start">
+          <ion-icon 
+            name="sparkles-outline"
+            color="favorite">
+          </ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-content>
+</ion-app>

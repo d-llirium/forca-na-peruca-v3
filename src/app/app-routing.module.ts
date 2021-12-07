@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'como-tab',
+    loadChildren: () => import('./como-tab/como-tab.module').then( m => m.ComoTabPageModule)
+  },
+  {
+    path: 'sobre',
+    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+  },
+  {
+    path: 'como-projeto',
+    loadChildren: () => import('./como-projeto/como-projeto.module').then( m => m.ComoProjetoPageModule)
+  },
 ];
 
 @NgModule({
