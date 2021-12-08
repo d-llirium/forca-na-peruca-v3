@@ -1,49 +1,76 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button href="/home">
+    <ion-buttons 
+    slot="start">
+      <ion-button 
+      href="/home">
         <ion-icon 
-        class="sparkle"
-        name="home-outline">
+          class="sparkle"
+          name="home-outline">
         </ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <ion-list>
     <ion-list-header>
       Cadastros
     </ion-list-header>
 
-    <ion-item *ngFor="let cadastro of Cadastros" class="user-list">
+    <ion-item 
+      *ngFor="let cadastro of Cadastros" 
+      class="user-list">
       <ion-label>
         <h5>
-          <ion-icon name="person"></ion-icon> {{cadastro.nome}}
+        <ion-icon 
+          name="person">
+        </ion-icon> 
+        {{cadastro.nome}}
         </h5>
       </ion-label>
-
-      <div class="item-note" item-end>
-        <button ion-button clear [routerLink]="['/cadastro-editar/', cadastro.$key]">
-          <ion-icon name="create-outline"></ion-icon>
+      <div 
+        class="item-note" 
+        item-end>
+        <button 
+          ion-button 
+          clear 
+          [routerLink]="['/cadastro-editar/', cadastro.$key]">
+          <ion-icon 
+            name="create-outline">
+          </ion-icon>
         </button>
-        <button ion-button clear (click)="deleteCadastro(cadastro.$key)">
-          <ion-icon name="trash-outline"></ion-icon>
+        <button 
+          ion-button 
+          clear (click)="deleteCadastro(cadastro.$key)">
+          <ion-icon 
+            name="trash-outline">
+          </ion-icon>
         </button>
       </div>
     </ion-item>
   </ion-list>
-
   <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button routerLinkActive="tab-selected" href="/cadastro">
-        <ion-icon name="calendar-outline"></ion-icon>
-        <ion-label>Cadastros</ion-label>
+    <ion-tab-bar 
+      slot="bottom">
+      <ion-tab-button 
+        color="clear"
+        href="/cadastro">
+        <ion-icon 
+          name="calendar-outline">
+        </ion-icon>
+        <ion-label>cadastros</ion-label>
       </ion-tab-button>  
-      <ion-tab-button routerLinkActive="tab-selected" routerLink="/cadastro-registrar" tab="cadastro-registrar">
-        <ion-icon name="add-circle-outline"></ion-icon>
-        <ion-label>Cadastrar</ion-label>
+      <ion-tab-button 
+        routerLinkActive="tab-selected" 
+        routerLink="/cadastro-registrar" 
+        tab="cadastro-registrar">
+        <ion-icon 
+          name="add-circle-outline">
+        </ion-icon>
+        <ion-label>
+          cadastrar
+        </ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
