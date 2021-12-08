@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { CadastroPage } from './cadastro.page';
 // -- cadastro-routing.module.ts
 const routes: Routes = [

@@ -37,7 +37,8 @@ export class CadastroPage implements OnInit
     })
   }
 
-  deletecadastro(id) {
+  deleteCadastro(id) 
+  {
     console.log(id)
     if (window.confirm('Você quer mesmo deletar o seu cadastro?')) {
       this.cadService.deleteCadastro(id)
