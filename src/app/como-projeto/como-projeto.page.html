@@ -1,9 +1,486 @@
+<!-- header -->
 <ion-header>
   <ion-toolbar>
-    <ion-title>como-projeto</ion-title>
   </ion-toolbar>
 </ion-header>
-
+<!-- content -->
 <ion-content>
-<h1>como-projeto</h1>
+  <ion-title> 
+    criando o projeto
+  </ion-title>
+  <!-- card: instalações -->
+  <ion-card>
+    <!-- card-header -->
+    <ion-card-header>
+      <ion-button 
+        target="_blank" 
+        color="clear" 
+        href="https://support.apple.com/pt-br/HT210222">
+        <img 
+          src="./assets/icon/apple-icon.png" 
+          width="15">
+      </ion-button>
+      <ion-card-subtitle>
+        instalações no macbook
+      </ion-card-subtitle>
+    </ion-card-header>
+    <!-- card-content -->
+    <ion-card-content>
+      <ion-list inset="true" lines="inset">
+        <!-- item 1 -->
+        <ion-item>
+          <ion-checkbox color="secondary" slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            1. instalar o <strong>VScode</strong>
+            <ion-button targe="_blank" fill="outline" href="https://code.visualstudio.com/download">
+              <img src="./assets/icon/visual-code-icon.png" width="15">
+            </ion-button>
+          </ion-text>
+        </ion-item>
+        <!-- item 2 -->
+        <ion-item>
+          <ion-checkbox color="secondary" slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            2. instalar o <strong>NodeJS</strong>
+            <ion-button target="_blank" fill="outline" href="https://nodejs.org/en/">
+              <img src="./assets/icon/node-js.png" width="15">
+            </ion-button>
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <!-- card: cachimbinho!!! -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        ainda não acabou não...
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img 
+      src="https://c.tenor.com/lmisUEDoTIgAAAAd/mr-dinkles-dinkles.gif">
+    </ion-img>
+  </ion-card>
+  <!-- card: no terminal -->
+  <ion-card>
+    <!-- card header -->
+    <ion-card-header>
+      <ion-button 
+        target="_blank" 
+        color="clear" 
+        href="https://pt.wikihow.com/Abrir-o-Terminal-no-Mac">
+        <ion-icon 
+          color="secondary" 
+          name="terminal-outline">
+        </ion-icon>
+      </ion-button>
+      <ion-card-subtitle>
+        @ terminal
+      </ion-card-subtitle>
+    </ion-card-header>
+    <!-- card content -->
+    <ion-card-content>
+      <ion-list 
+        inset="true" 
+        lines="inset">
+        <!-- item 1 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            1. criar <strong>pasta</strong>
+            <br>
+            <ion-text color="dark">
+              $ mkdir nomeDaPasta
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 2 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            2. entrar na <strong>pasta</strong>
+            <br>
+            <ion-text color="dark">
+              $ cd nomeDaPasta
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 3 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            3. instalar o <strong>ionic</strong> na pasta como admin
+            <br>
+            <ion-text 
+              color="dark">
+              $ sudo npm install -g @ionic/cli
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 4 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            4. iniciar um projeto <strong>ionic</strong>
+            <br>
+            <ion-text 
+              color="dark">
+              $ ionic start projeto-app
+              <br>
+              > angular
+              <br>
+              > blank
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 5 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            5. iniciar um <strong>repositório local</strong>
+            <br>
+            <ion-text color="dark">
+              $ git init
+            </ion-text>
+            <br>
+            <ion-text 
+              color="danger">
+              * para isso é necessário ter o git instalado na máquina
+            </ion-text>
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <!-- card: snap!!! -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        se fosse só isso tava bom né?!
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img 
+      src="https://c.tenor.com/ZO4UguESSBwAAAAC/trolls-movie-oh.gif">
+    </ion-img>
+  </ion-card>
+  <!-- card: github -->
+  <ion-card>
+    <!-- card-header -->
+    <ion-card-header>
+      <ion-button 
+        target="_blank" 
+        color="clear" 
+        href="https://docs.github.com/pt/get-started/quickstart/create-a-repo">
+        <ion-icon 
+          style="color: gray;" 
+          name="logo-github" 
+          size="small">
+        </ion-icon>
+      </ion-button>
+      <ion-card-subtitle>
+        @ github
+      </ion-card-subtitle>
+    </ion-card-header>
+    <!-- card-content -->
+    <ion-card-content>
+      <ion-list inset="true" lines="inset">
+        <!-- item 1 -->
+        <ion-item>
+          <ion-checkbox color="secondary" slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            1. ter uma conta no <strong>github</strong> que esteja conectada ao repositório local do seu computador
+          </ion-text>
+        </ion-item>
+        <!-- item 2 -->
+        <ion-item>
+          <ion-checkbox color="secondary" slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            2. entrar no link <strong>seus repositórios</strong>
+          </ion-text>
+        </ion-item>
+        <!-- item 3 -->
+        <ion-item>
+          <ion-checkbox color="secondary" slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            3. click em <strong>novo</strong>
+          </ion-text>
+        </ion-item>
+        <!-- item 4 -->
+        <ion-item>
+          <ion-checkbox color="secondary" slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            4. nome do repositório <strong>projeto</strong>
+          </ion-text>
+        </ion-item>
+        <!-- item 5 -->
+        <ion-item>
+          <ion-checkbox color="secondary" slot="start">
+          </ion-checkbox>
+          <ion-text color="primary">
+            5. deixe o <strong>repositório público</strong>
+            <br>
+            <ion-text color="danger">
+              * não inicialize o repositório README, .gitignore ou license
+            </ion-text>
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <!-- card: hum hum!!! -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        vai seguindo o rítmo....
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img 
+      src="https://c.tenor.com/YpcTmPVDIOYAAAAC/mr-dinkles-dinkles.gif">
+    </ion-img>
+  </ion-card>
+  <!-- card: no terminal -->
+  <ion-card>
+    <!-- card header -->
+    <ion-card-header>
+      <ion-button 
+        target="_blank" 
+        color="clear" 
+        href="https://pt.wikihow.com/Abrir-o-Terminal-no-Mac">
+        <ion-icon 
+          color="secondary" 
+          name="terminal-outline">
+        </ion-icon>
+      </ion-button>
+      <ion-card-subtitle>
+        @ terminal
+      </ion-card-subtitle>
+    </ion-card-header>
+    <!-- card content -->
+    <ion-card-content>
+      <ion-list 
+        inset="true" 
+        lines="inset">
+        <!-- item 1 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            1. na <strong>pasta</strong>
+            <br>
+            <ion-text 
+              color="dark">
+              $ cd projeto-app
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 2 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            2. adicionar os <strong>aquivos do projeto ionic</strong>, que foi criado, ao repositório local
+            <br>
+            <ion-text 
+              color="dark">
+              $ git add .
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 3 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            3. fazer o primeiro <strong>commit</strong>, produzindo o primeiro registro de versionamento local
+            <br>
+            <ion-text 
+              color="dark">
+              $ git commit -m "commit inicial"
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 4 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            4. adicionar o <strong>repositório remoto</strong>
+            <br>
+            <ion-text 
+              color="dark">
+              $ git remote add origin https://github.com/usuario/repositorio.git
+            </ion-text>
+            <br>
+            <ion-text 
+              color="danger">
+              * nesse caso substitua com o https do seu git
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 5 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            5. crie localmente e sinalize que a <strong>branch main</strong> local é a principal
+            <br>
+            <ion-text 
+              color="dark">
+              $ git branch -M main
+            </ion-text>
+            <br>
+          </ion-text>
+        </ion-item>
+        <!-- item 6 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            6. empurre o commit inicial do seu repositório local para o<strong> git remoto</strong>
+            <br>
+            <ion-text color="dark">
+              $ git push -u origin main
+            </ion-text>
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <!-- card: on fire!!! -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        eita lasquera!!!!
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img 
+      src="https://c.tenor.com/0jfligdZ5BAAAAAd/mr-dinkles-flames.gif">
+    </ion-img>
+  </ion-card>
+  <!-- card: Vscode -->
+  <ion-card>
+    <!-- card-header -->
+    <ion-card-header>
+      <ion-button 
+        target="_blank" 
+        color="clear" 
+        href="https://www.devmedia.com.br/introducao-ao-visual-studio-code/34418">
+        <img 
+          src="./assets/icon/visual-code-icon.png" 
+          width="15">
+      </ion-button>
+      <ion-card-subtitle>
+        @ VScode
+      </ion-card-subtitle>
+    </ion-card-header>
+    <!-- card-content -->
+    <ion-card-content>
+      <ion-list 
+        inset="true" 
+        lines="inset">
+        <!-- item 1 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            1. abrir a <strong>pasta do projeto</strong>
+            <br>
+            <ion-text 
+              color="dark">
+              [cmnd] + [O]
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 2 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            2. abrir o <strong>terminal do VScode</strong>
+            <br>
+            <ion-text 
+              color="dark">
+              [ctrl] + [shft] + [`]
+            </ion-text>
+          </ion-text>
+        </ion-item>
+        <!-- item 3 -->
+        <ion-item>
+          <ion-checkbox 
+            color="secondary" 
+            slot="start">
+          </ion-checkbox>
+          <ion-text 
+            color="primary">
+            3. rodar o app no <strong>navegador</strong>
+            <br>
+            <ion-text 
+              color="dark">
+              % ionic serve
+            </ion-text>
+          </ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <!-- card: put out fire!!! -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        sossega o forninho que é só o começo!
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img 
+      src="https://c.tenor.com/pD1Ovgcfv7oAAAAC/mr-dinkles-dinkles.gif">
+    </ion-img>
+  </ion-card>
 </ion-content>
