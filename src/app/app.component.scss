@@ -28,23 +28,25 @@
 
 ion-header
 {
-    ion-buttons
-    {
-        ion-button
+  ion-buttons
+  {
+      ion-button
+      {
+          color: clear;
+          
+          ion-label
+          {
+              color: var(--ion-color-favorite);
+          }
+      }
+      ion-fab-button
+      {
+        ion-icon
         {
-            color: clear;
-            
-            ion-label
-            {
-                color: var(--ion-label-color);
-            }
-            ion-icon
-            {
-                color: var(--ion-color-favorite);
-            }
+            color: var(--ion-color-favorite);
         }
-    }
-
+      }
+  }
 }
 ion-card-title
 {
@@ -53,4 +55,8 @@ ion-card-title
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+}
+ion-tab-button.sparkle
+{
+  color: var(--ion-color-favorite);
 }
