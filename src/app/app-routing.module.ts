@@ -36,7 +36,7 @@ const routes: Routes = [
     loadChildren: () => import('./cadastro-registrar/cadastro-registrar.module').then( m => m.CadastroRegistrarPageModule)
   },
   {
-    path: 'cadastro-editar',
+    path: 'cadastro-editar/:id', // -- adiciona esse /:id
     loadChildren: () => import('./cadastro-editar/cadastro-editar.module').then( m => m.CadastroEditarPageModule)
   },
 ];

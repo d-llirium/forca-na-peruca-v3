@@ -5,5 +5,17 @@
 </ion-header>
 
 <ion-content>
-
+  <h1>cadastro</h1>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLinkActive="tab-selected" routerLink="/cadastro" class="ios" tab="cadastro">
+        <ion-icon name="list-box"></ion-icon>
+        <ion-label>Cadastros</ion-label>
+      </ion-tab-button>  
+      <ion-tab-button routerLinkActive="tab-selected" routerLink="/cadastro-registrar" class="ios" tab="cadastro-registrar">
+        <ion-icon name="add-circle"></ion-icon>
+        <ion-label>Cadastrar</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
