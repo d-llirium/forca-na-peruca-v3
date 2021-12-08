@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'como-projeto',
     loadChildren: () => import('./como-projeto/como-projeto.module').then( m => m.ComoProjetoPageModule)
   },
+  {
+    path: 'mapa',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
 ];
 
 @NgModule({
