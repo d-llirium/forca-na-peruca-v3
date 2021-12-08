@@ -10,8 +10,12 @@ const routes: Routes = [
     children: 
     [ // -- adicione as filhas que entram na TAB
       {
-        path: 'cadastro-registrar/',
+        path: 'cadastro-registrar',
         loadChildren: () => import('../cadastro-registrar/cadastro-registrar.module').then( m => m.CadastroRegistrarPageModule)
+      },
+      {
+        path: 'cadastro-editar/:id', // -- adiciona esse /:id
+        loadChildren: () => import('../cadastro-editar/cadastro-editar.module').then( m => m.CadastroEditarPageModule)
       },
     ],
   },
