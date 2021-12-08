@@ -12,8 +12,11 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
+
   <ion-list>
+
     <ion-list-header>
       Cadastros
     </ion-list-header>
@@ -28,25 +31,32 @@
         </ion-icon> 
         {{cadastro.nome}}
         </h5>
+        <p>
+          <ion-icon 
+          name="email">
+        </ion-icon> 
+        {{cadastro.email}}
+        </p>
       </ion-label>
       <div 
         class="item-note" 
         item-end>
-        <button 
-          ion-button 
-          clear 
+        <ion-button 
+          color="clear" 
           [routerLink]="['/cadastro-editar/', cadastro.$key]">
           <ion-icon 
+            class="sparkle"
             name="create-outline">
           </ion-icon>
-        </button>
-        <button 
-          ion-button 
-          clear (click)="deleteCadastro(cadastro.$key)">
+        </ion-button>
+        <ion-button 
+          color="clear"
+          (click)="deleteCadastro(cadastro.$key)">
           <ion-icon 
+           class="sparkle"
             name="trash-outline">
           </ion-icon>
-        </button>
+        </ion-button>
       </div>
     </ion-item>
   </ion-list>
@@ -55,14 +65,13 @@
       slot="bottom">
       <ion-tab-button 
         color="clear"
-        href="/cadastro">
+        routerLink="/cadastro">
         <ion-icon 
           name="calendar-outline">
         </ion-icon>
         <ion-label>cadastros</ion-label>
       </ion-tab-button>  
       <ion-tab-button 
-        routerLinkActive="tab-selected" 
         routerLink="/cadastro-registrar" 
         tab="cadastro-registrar">
         <ion-icon 
