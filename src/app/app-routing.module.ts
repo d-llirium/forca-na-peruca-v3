@@ -27,6 +27,18 @@ const routes: Routes = [
     path: 'mapa',
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
   },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'cadastro-registrar',
+    loadChildren: () => import('./cadastro-registrar/cadastro-registrar.module').then( m => m.CadastroRegistrarPageModule)
+  },
+  {
+    path: 'cadastro-editar',
+    loadChildren: () => import('./cadastro-editar/cadastro-editar.module').then( m => m.CadastroEditarPageModule)
+  },
 ];
 
 @NgModule({
