@@ -10,11 +10,11 @@ const routes: Routes = [
     children: 
     [ // -- adicione as filhas que entram na TAB
       {
-        path: 'cadastro-editar/',
-        loadChildren: () => import('../cadastro-editar/cadastro-editar.module').then( m => m.CadastroEditarPageModule)
+        path: 'cadastro-registrar/',
+        loadChildren: () => import('../cadastro-registrar/cadastro-registrar.module').then( m => m.CadastroRegistrarPageModule)
       },
     ],
-  }
+  },
 ];
 
 @NgModule({
